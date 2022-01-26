@@ -10,14 +10,11 @@ public:
         return count;
     }
     bool isPowerOfTwo(int n) {
-        // if(n<0)
-        //     return false;
-        // if(countPwer(n)==1)
-        //     return true;
-        // else 
-        //     return false;
-        if(n==0) return false;
-        if(n==1) return true;
-        return n%2==0 && isPowerOfTwo(n/2);
+        if(n<0)
+            return false;
+        if(countPwer(n)==1)
+            return true;
+        else 
+            return false;
     }
 };
