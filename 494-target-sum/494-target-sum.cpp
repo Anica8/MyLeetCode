@@ -22,8 +22,8 @@ public:
         
         int n=nums.size();
         if(n==0) return 0;
-        if(n==1 && abs(nums[0])==abs(target)) return 1;
-        else if(n==1) return 0;
+        // if(n==1 && abs(nums[0])==abs(target)) return 1;
+        // else if(n==1) return 0;
         int s=0;
         for(int i=0;i<n;i++)
             s+=nums[i];
