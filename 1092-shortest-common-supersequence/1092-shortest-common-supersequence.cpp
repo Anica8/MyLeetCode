@@ -54,7 +54,8 @@ public:
 
         //vector<vector<int>> dp(n, vector<int>(m, -1));
         //return f(n-1, m-1, s, t, dp);
-        vector<vector<int>> dp(n+1, vector<int>(m+1, -1));
+        //vector<vector<int>> dp(n+1, vector<int>(m+1, -1));
+        int dp[n+1][m+1];
 
         for(int j=0; j<=m; j++) dp[0][j]=0;
         for(int i=0; i<=n; i++) dp[i][0]=0;
